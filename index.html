@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+    <title>task</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td id="1_fir">
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="User_Name">User Name</label>
+                        <input type="text" name="User_Name" id="User_Name" onkeydown="valid_username()" required>
+                        <label for="" id='valid_username' style="color: red; visibility: hidden"> Invalid User
+                            name</label>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="product" id="password"  onkeydown="valid_password()" required >
+                        <input type="checkbox" onclick="tog()">Show Password
+                        <br>
+                        
+                        <label for="" id = "valid_password" style="color: red; visibility: hidden">Invalid password</label>
+                    </div>
+                    <div>
+                        <label for="Age">Age</label>
+                        <input type="number" name="Age" id="Age" onchange="valid_age()"  required>
+                        <label for="" id = "valid_age" style="color: red; visibility: hidden">Invalid Age</label>
+                    </div>
+                    <div>
+                        <label for="Gender" value = "">Select Gender</label >
+                        <select name="Gender" id="Gender" placeholder="gender" value = "select gender" required>
+                            <label for="Gender">select gender</label>
+                           
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+
+                        </select>
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Add" id="hey">
+
+                    </div>
+                </form>
+
+            <td id="sec">
+                <input type="text" id="myInput" onkeyup="filter()" placeholder="Search for Username.." title="Type in a name">
+   
+               <p>
+                <table class="list" id="show" class = "td">
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                        </tr>
+                    </thead>
+               </p> 
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+table {
+    width: 10%;
+    margin-right: auto;
+
+    border-radius: 50px;
+    border-radius: 0px;
+    background: rgb(255,211,188);
+    
+    color: rgb(51, 50, 49);
+}
+
+
+
+
+body {
+    background-image: url(/bbburst.svg);
+    background-repeat: no-repeat;
+    /* background-color: rgb(57, 121, 113), */
+    background-size: cover ;
+    /* background-size: cover */
+
+
+
+
+}
+
+td#sec {
+    display: flex;
+    
+    flex-direction:column ;
+    /* border: 1px solid; */
+}
+
+ /* #show tr, #show th, table{
+  border: 1px solid black;
+  
+    
+} */
+
